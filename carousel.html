@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>image carousel</title>
+	<title>Image Carousel</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="carousel.css">
 	<script type="text/javascript" src="carousel.js"></script>
 </head>
 <body>
+	<marquee>Building my first site</marquee>
 	<div class="main1">
-		<div class="main2">
+		<div class="main2" id = "imgs">
 			<span class="previous" onclick="gotoprevious()">&#10094;</span>
 			<img  src="https://wallpapercave.com/wp/wp1808940.jpg" alt="beautiful pink sky">
 			<span class="next" onclick="gotonext(5)">&#10095;</span>
 		</div>
-		<div class="circles">
+		<div class="circles" id="bttns">
 			<span onclick="spanclick(0)" class="bubble"></span>
 			<span onclick="spanclick(1)" class="bubble"></span>
 			<span onclick="spanclick(2)" class="bubble"></span>
@@ -24,6 +25,14 @@
 			// for every 3s the gotonext() function should be called
 			setInterval(function(){gotonext(5);},4000);
 		</script>
+	</div>
+	<div>
+		<p>
+			<b>
+				Ready to take suggestions to improve the site
+			</b>
+			Create pull request in my github account
+		</p>
 	</div>
 </body>
 </html>
